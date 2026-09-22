@@ -1,0 +1,805 @@
+
+
+
+
+
+
+Busy mom fat loss guide · HTML
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>the busy mom fat loss guide — @her_rebuild</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+  :root {
+
+    --cream: #FAF6EE;
+
+    --ink: #2B2420;
+
+    --ink-soft: #6b5f54;
+
+    --berry: #A63D52;
+
+    --berry-dark: #7C2E3F;
+
+    --sage: #6E7A54;
+
+    --sage-light: #E9EADB;
+
+    --blush: #F3E1DC;
+
+    --line: #E4D8C8;
+
+    --card: #FFFFFF;
+
+    font-family: 'Figtree', system-ui, sans-serif;
+
+    box-sizing: border-box;
+
+    padding-top: env(safe-area-inset-top, 0px);
+
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+
+  }
+
+  * { box-sizing: inherit; }
+
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+  html, body { margin:0; padding:0; }
+
+  body {
+
+    background: var(--cream);
+
+    color: var(--ink);
+
+    line-height: 1.6;
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    :root:not([data-theme="light"]) {
+
+      --cream: #FAF6EE;
+
+      --card: #FFFFFF;
+
+    }
+
+  }
+
+ 
+
+  .wrap {
+
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    padding: 0 24px 80px;
+
+  }
+
+ 
+
+  /* HERO */
+
+  .hero {
+
+    padding: 56px 0 40px;
+
+    text-align: center;
+
+    border-bottom: 1px solid var(--line);
+
+    margin-bottom: 44px;
+
+  }
+
+  .hero .label {
+
+    display: inline-block;
+
+    font-family: 'Figtree', sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 0.02em;
+
+    color: var(--berry);
+
+    background: var(--blush);
+
+    padding: 5px 14px;
+
+    border-radius: 100px;
+
+    margin-bottom: 20px;
+
+  }
+
+  .hero h1 {
+
+    font-family: 'Fraunces', serif;
+
+    font-weight: 500;
+
+    font-size: clamp(34px, 8vw, 46px);
+
+    line-height: 1.12;
+
+    margin: 0 0 14px;
+
+    color: var(--ink);
+
+  }
+
+  .hero .sub {
+
+    font-size: 17px;
+
+    color: var(--ink-soft);
+
+    max-width: 440px;
+
+    margin: 0 auto;
+
+  }
+
+  .hero .byline {
+
+    margin-top: 26px;
+
+    font-size: 14px;
+
+    color: var(--ink-soft);
+
+  }
+
+  .hero .byline strong { color: var(--berry); font-weight: 600; }
+
+ 
+
+  /* INTRO */
+
+  .intro {
+
+    margin-bottom: 52px;
+
+  }
+
+  .intro p {
+
+    font-size: 16.5px;
+
+    margin: 0 0 16px;
+
+  }
+
+  .intro .sign {
+
+    font-family: 'Fraunces', serif;
+
+    font-style: italic;
+
+    font-size: 19px;
+
+    color: var(--berry-dark);
+
+    margin-top: 24px;
+
+  }
+
+ 
+
+  /* SECTION HEADS */
+
+  h2.section-title {
+
+    font-family: 'Fraunces', serif;
+
+    font-weight: 500;
+
+    font-size: 27px;
+
+    margin: 0 0 8px;
+
+    color: var(--ink);
+
+  }
+
+  .section-dek {
+
+    color: var(--ink-soft);
+
+    font-size: 15px;
+
+    margin: 0 0 26px;
+
+  }
+
+  section { margin-bottom: 56px; }
+
+ 
+
+  /* METHOD STEPS */
+
+  .step {
+
+    display: grid;
+
+    grid-template-columns: 44px 1fr;
+
+    gap: 16px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid var(--line);
+
+  }
+
+  .step:last-child { border-bottom: 1px solid var(--line); }
+
+  .step .num {
+
+    font-family: 'Fraunces', serif;
+
+    font-size: 24px;
+
+    color: var(--berry);
+
+    font-weight: 500;
+
+  }
+
+  .step h3 {
+
+    font-family: 'Fraunces', serif;
+
+    font-weight: 500;
+
+    font-size: 19px;
+
+    margin: 0 0 6px;
+
+  }
+
+  .step p { margin: 0; font-size: 15.5px; color: var(--ink); }
+
+  .step p + p { margin-top: 8px; }
+
+  .step .tip {
+
+    font-size: 14px;
+
+    color: var(--sage);
+
+    margin-top: 8px;
+
+    font-weight: 500;
+
+  }
+
+ 
+
+  /* FOOD LIST */
+
+  .food-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+  }
+
+  @media (max-width: 420px) {
+
+    .food-grid { grid-template-columns: 1fr; }
+
+  }
+
+  .food-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--line);
+
+    border-radius: 14px;
+
+    padding: 16px 16px 15px;
+
+  }
+
+  .food-card .top {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 9px;
+
+    margin-bottom: 6px;
+
+  }
+
+  .food-card .n {
+
+    font-family: 'Fraunces', serif;
+
+    color: var(--berry);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+  }
+
+  .food-card .name {
+
+    font-weight: 700;
+
+    font-size: 15.5px;
+
+  }
+
+  .food-card p {
+
+    margin: 0;
+
+    font-size: 13.5px;
+
+    color: var(--ink-soft);
+
+    line-height: 1.5;
+
+  }
+
+  .key-line {
+
+    background: var(--sage-light);
+
+    border-radius: 14px;
+
+    padding: 20px 22px;
+
+    margin-top: 22px;
+
+    font-size: 15.5px;
+
+  }
+
+  .key-line strong { color: var(--sage); }
+
+ 
+
+  /* MEALS */
+
+  .meal-row {
+
+    display: flex;
+
+    gap: 14px;
+
+    padding: 16px 0;
+
+    border-top: 1px solid var(--line);
+
+    align-items: flex-start;
+
+  }
+
+  .meal-row:last-child { border-bottom: 1px solid var(--line); }
+
+  .meal-row .time {
+
+    flex: 0 0 74px;
+
+    font-size: 13px;
+
+    color: var(--berry);
+
+    font-weight: 600;
+
+    padding-top: 2px;
+
+  }
+
+  .meal-row .combo { font-size: 15.5px; }
+
+ 
+
+  /* CLOSER */
+
+  .closer {
+
+    background: var(--berry);
+
+    color: var(--cream);
+
+    border-radius: 20px;
+
+    padding: 38px 30px;
+
+    text-align: center;
+
+  }
+
+  .closer h2 {
+
+    font-family: 'Fraunces', serif;
+
+    font-weight: 500;
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+
+    color: #fff;
+
+  }
+
+  .closer p {
+
+    font-size: 15.5px;
+
+    margin: 0 0 22px;
+
+    color: #F3E1DC;
+
+  }
+
+  .closer .cta {
+
+    display: inline-block;
+
+    background: var(--cream);
+
+    color: var(--berry-dark);
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    padding: 13px 26px;
+
+    border-radius: 100px;
+
+    text-decoration: none;
+
+  }
+
+  .closer .handle {
+
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    color: #F3E1DC;
+
+  }
+
+ 
+
+  .foot {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: var(--ink-soft);
+
+    margin-top: 40px;
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+ 
+
+  <div class="hero">
+
+    <span class="label">free guide</span>
+
+    <h1>the busy mom<br>fat loss guide</h1>
+
+    <p class="sub">track. walk. lift. eat food that actually keeps you full — without spending 2 hours in the gym or feeling like you're "on a diet" all day.</p>
+
+    <p class="byline">by <strong>heather</strong> · @her_rebuild</p>
+
+  </div>
+
+ 
+
+  <div class="intro">
+
+    <p>hey friend 👋 if you're a busy mom or just a busy woman in general, trying to figure out fat loss without losing your mind — this one's for you.</p>
+
+    <p>i'm not going to hand you a magic pill or a 2-hour gym routine you'll quit in a week. this is the exact framework i used on my own 90-day transformation, and it comes down to three things: track, walk, lift. plus a short list of foods that make the whole thing so much easier.</p>
+
+    <p class="sign">let's get into it.</p>
+
+  </div>
+
+ 
+
+  <section>
+
+    <h2 class="section-title">the method: track, walk, lift</h2>
+
+    <p class="section-dek">simple, repeatable, and built for a life that's already full.</p>
+
+ 
+
+    <div class="step">
+
+      <div class="num">01</div>
+
+      <div>
+
+        <h3>track your calories</h3>
+
+        <p>find your TDEE (total daily energy expenditure) using any free TDEE calculator online. that number is your starting point — it tells you roughly how much you burn in a day, so you know where to set your deficit from.</p>
+
+        <p class="tip">no guessing, no starving. just a number to work from.</p>
+
+      </div>
+
+    </div>
+
+ 
+
+    <div class="step">
+
+      <div class="num">02</div>
+
+      <div>
+
+        <h3>walk 8,000–10,000 steps a day</h3>
+
+        <p>don't jump straight to 10k if you're nowhere near it right now. add 3,000–4,000 steps to your current daily average and slowly build from there.</p>
+
+        <p class="tip">this alone moves the needle more than people expect.</p>
+
+      </div>
+
+    </div>
+
+ 
+
+    <div class="step">
+
+      <div class="num">03</div>
+
+      <div>
+
+        <h3>lift 2–3x a week</h3>
+
+        <p>focus on progressive overload — gradually doing a little more over time — and time under tension in your reps. you don't need to live in the gym, you just need to show up consistently.</p>
+
+        <p class="tip">this is what keeps the changes visible, not just the scale.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+
+  <section>
+
+    <h2 class="section-title">your fat-loss food list</h2>
+
+    <p class="section-dek">not because they're "magic" foods 😂 — because they make it easy to build meals that are high in protein + fiber, keep you full for hours, and help you stay consistent without feeling like you're dieting all day.</p>
+
+ 
+
+    <div class="food-grid">
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">1</span><span class="name">chicken breast 🍗</span></div>
+
+        <p>easy lean protein for bowls, wraps, salads, pasta — pretty much anything. hard to overdo, and budget-friendly.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">2</span><span class="name">eggs + egg whites 🍳</span></div>
+
+        <p>one of the easiest ways to get 40+ g of protein at breakfast without overcomplicating it.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">3</span><span class="name">greek yogurt 🥣</span></div>
+
+        <p>breakfast, snacks, dessert bowls, even sauces — it works like a sour cream swap. also the base of my viral pumpkin cheesecake.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">4</span><span class="name">cottage cheese</span></div>
+
+        <p>high protein and super versatile — great stirred into squash, eggs, or berries.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">5</span><span class="name">lean ground beef or turkey 🥩</span></div>
+
+        <p>93% or 96% lean, perfect for taco bowls, burger bowls, pasta, chili, or meal prep.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">6</span><span class="name">potatoes 🥔</span></div>
+
+        <p>yes, potatoes. filling, easy to portion, and one of my favorite fat-loss carbs — just air fry, don't deep fry.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">7</span><span class="name">berries 🍓</span></div>
+
+        <p>easy fiber, volume, and sweetness without needing a huge portion.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">8</span><span class="name">apples 🍎</span></div>
+
+        <p>the easiest grab-and-go snack, and great paired with greek yogurt or cottage cheese.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">9</span><span class="name">high-fiber or egg white wraps 🌯</span></div>
+
+        <p>makes quick lunches so much easier when your day is already packed.</p>
+
+      </div>
+
+      <div class="food-card">
+
+        <div class="top"><span class="n">10</span><span class="name">broccoli / green veggies 🥦</span></div>
+
+        <p>an easy way to add volume + fiber so meals actually keep you satisfied.</p>
+
+      </div>
+
+    </div>
+
+ 
+
+    <div class="key-line">
+
+      and this is the key 🔑 — you don't need to eat all 10 every single day. just keep these stocked in your fridge and pantry so you can build easy meals without overthinking what to eat.
+
+    </div>
+
+  </section>
+
+ 
+
+  <section>
+
+    <h2 class="section-title">simple meals to build from the list</h2>
+
+    <p class="section-dek">mix and match — this is the whole point, no recipe required.</p>
+
+ 
+
+    <div class="meal-row">
+
+      <div class="time">breakfast</div>
+
+      <div class="combo">eggs + egg whites scrambled, greek yogurt with berries on the side, or cottage cheese stirred into eggs.</div>
+
+    </div>
+
+    <div class="meal-row">
+
+      <div class="time">lunch</div>
+
+      <div class="combo">chicken breast or lean turkey in a high-fiber wrap with greens — or a bowl with potatoes and broccoli.</div>
+
+    </div>
+
+    <div class="meal-row">
+
+      <div class="time">dinner</div>
+
+      <div class="combo">lean ground beef taco bowl or burger bowl, air-fried potatoes, green veggies on the side.</div>
+
+    </div>
+
+    <div class="meal-row">
+
+      <div class="time">snack</div>
+
+      <div class="combo">apple with greek yogurt or cottage cheese, or a handful of berries.</div>
+
+    </div>
+
+  </section>
+
+ 
+
+  <section>
+
+    <p style="font-size:16.5px;">protein + fiber + simple, repeatable meals = a whole lot easier to stay in a calorie deficit consistently. that's it. that's the whole secret. 🙌🏼</p>
+
+  </section>
+
+ 
+
+  <div class="closer">
+
+    <h2>WANT A PERSONALIZED PLAN?</h2>
+
+    <p>this guide gives you the framework — but everyone's starting point is different. start 1-on-1 coaching with me and i'll build your TDEE, steps, and lifting plan around your actual life.</p>
+
+    <a class="cta" href="https://forms.gle/i9y5mneK5kPVcZfN7" target="_blank" rel="noopener">work with me 1-on-1</a>
+
+    <div class="handle">spots are limited — i work with a small group at a time 🤍</div>
+
+  </div>
+
+ 
+
+  <div class="foot">made with you in mind, from one busy mom to another.</div>
+
+ 
+
+</div>
+
+</body>
+
+</html>
+
+ 
+
+
+
+
+
+
+
+
